@@ -30,7 +30,7 @@ USING_NS_CC;
 
 
 // 画像ファイル名
-#define MYUNIT_IMAGE "MyUnitImg.png"　// 操作するバー(=ユニット)
+#define MYUNIT_IMAGE "MyUnitImg.png"        // 操作するバー(=ユニット)
 
 #define WIDTH_UP_ITEM   "red.png"          // ユニット幅増加アイテム　仮定義
 #define WIDTH_DOWN_ITEM "red.png"          // ユニット幅低下アイテム 仮定義

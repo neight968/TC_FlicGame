@@ -40,9 +40,9 @@ private:
     void pushStart(Ref *pSender);		// スタートボタンが押された際の処理
     void pushEnd(Ref *pSender);			// 終了ボタンが押された際の処理
     
-     CItemGenerator* generator;
-    
 public:
+    
+    
     TitleScene();			// コンストラクタ
     virtual ~TitleScene();	// デストラクタ
     

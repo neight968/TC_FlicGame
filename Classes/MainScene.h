@@ -11,6 +11,7 @@
 #include "Block.hpp"
 #include "MyUnit.h"
 #include "Ball.hpp"
+#include "ItemGenerator.hpp"
 
 class MainScene: public Layer {
 private:
@@ -40,6 +41,8 @@ private:
     void initScoreLabel();		// スコアラベルの初期化
     
     void createMyUnit();		// MyUnitを生成
+    
+    CItemGenerator* itemGenerator;
     
 	
 public:

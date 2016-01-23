@@ -11,12 +11,16 @@
 MainScene::MainScene()
 :touchFlag(true)		// タップの許可
 {
+    itemGenerator->parentLayer = this;
 }
 
 #pragma mark --- デストラクタ ---
 MainScene::~MainScene() {
 	getEventDispatcher()->removeEventListenersForTarget(this);	// タッチイベントの解放
 	this->removeAllChildrenWithCleanup(true);					// 全解放
+    
+    delete itemGenerator;
+    itemGenerator = nullptr;
 }
 
 #pragma mark --- シーン生成 ---
@@ -75,7 +79,6 @@ void MainScene::initBlocks() {
         }
     }
 }
-
 
 
 
@@ -163,14 +166,42 @@ void MainScene::update(float deltaTime) {
 
 #pragma mark --- 衝突判定 ---
 void MainScene::intersectsBallAndBlock() {
-    
     // ブロックの数分回す
-    for( int i = 1; i <= 40; i++ ) {
-        auto block = reinterpret_cast<BlockSprite*>(getChildByTag( i ));
-        auto ball = reinterpret_cast<Ball*>(getChildByTag(Tags(T_Ball)));
+    for( int i = 1; i <= 40; i++ ){
         
+        // ブロックのインスタンスを取得
+        auto block = reinterpret_cast<BlockSprite*>(getChildByTag(i));
         
+        if( block != nullptr ){
+            
+            // ブロックの Rect 取得
+            auto blocksRect = block->getBoundingBox();
+            
+            auto ball = (Ball*)getChildByTag(T_Ball);
+            if( ball != nullptr){
+                // ボールがあれば Rect を作る
+                auto ballRect = ball->getBoundingBox();
+                // ボールとブロックの衝突判定
+                if((ballRect.intersectsRect(blocksRect))){
+                    
+                    // 乱数でアイテム生成(現状0.3)、ブロックの消去
+                    int random = (int)CCRANDOM_0_1() * 10;
+                    if(random < 3){
+                        itemGenerator->generate(block->getPOS());
+                    }
+                    block->remove();
+                    
+                    // ↓スコアの加算
+                    
+                    // ↑スコアの加算
+                    
+                }
+            }
+
+            
+        }
     }
+    
 }
 
 

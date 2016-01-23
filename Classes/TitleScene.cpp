@@ -61,8 +61,6 @@ bool TitleScene::init() {
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
     
     
-
-    
     return true;
 }
 
@@ -72,12 +70,12 @@ void TitleScene::onEnter() {
     createTitleLogo();	// タイトルロゴ生成処理
     buttonCreate();		// ボタン生成処理
     createImage();		// 画像生成
-    
 }
 
 #pragma mark --- 終了処理 ---
 void TitleScene::onExit() {
     Layer::onExit();
+    
 }
 
 #pragma mark --- 更新処理 ---
