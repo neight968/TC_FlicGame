@@ -44,7 +44,7 @@ private:
 	
 public:
 	MainScene();		// コンストラクタ
-	~MainScene();		// デストラクタ
+	virtual ~MainScene();		// デストラクタ
 	
 	static Scene* createScene();	// シーン生成
 	static MainScene* create();		// シーン生成時にinit()を呼び出す

@@ -28,7 +28,6 @@ bool Ball::init(){
 
 void Ball::onEnter(){
     Sprite::onEnter();
-    
 }
 
 

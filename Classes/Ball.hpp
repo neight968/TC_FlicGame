@@ -21,7 +21,7 @@ private:
     bool m_scoreFlag;
     
 public:
-    ~Ball(){}
+    virtual ~Ball(){}
     Ball();
     
     virtual bool init();

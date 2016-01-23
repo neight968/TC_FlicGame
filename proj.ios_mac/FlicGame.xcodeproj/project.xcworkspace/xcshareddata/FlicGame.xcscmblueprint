@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "11C9CE14F1A5845E62C943242AF8ECDF6A00F42A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "46883221B5033D5D6514E6F287CA2EB28C47ADE6" : 0,
+    "11C9CE14F1A5845E62C943242AF8ECDF6A00F42A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "508B76B6-A278-4CBB-9617-9F24FE68F691",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "46883221B5033D5D6514E6F287CA2EB28C47ADE6" : "",
+    "11C9CE14F1A5845E62C943242AF8ECDF6A00F42A" : "FlicGame\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FlicGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "proj.ios_mac\/FlicGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/neight968\/TC_FlicGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11C9CE14F1A5845E62C943242AF8ECDF6A00F42A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/neight968\/FlicGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46883221B5033D5D6514E6F287CA2EB28C47ADE6"
+    }
+  ]
+}

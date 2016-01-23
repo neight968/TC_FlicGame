@@ -18,8 +18,7 @@
 #pragma mark --- コンストラクタ ---
 TitleScene::TitleScene()
 :tapFlag(true)	// タップの許可
-{
-}
+{}
 
 #pragma mark --- デストラクタ ---
 TitleScene::~TitleScene() {
@@ -41,6 +40,7 @@ TitleScene* TitleScene::create() {
     pRet->autorelease();
     pRet->init();
     return pRet;
+    
 }
 
 #pragma mark --- 初期化処理 ---
@@ -60,6 +60,9 @@ bool TitleScene::init() {
     // イベントリスナーの登録
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
     
+    
+
+    
     return true;
 }
 
@@ -69,6 +72,7 @@ void TitleScene::onEnter() {
     createTitleLogo();	// タイトルロゴ生成処理
     buttonCreate();		// ボタン生成処理
     createImage();		// 画像生成
+    
 }
 
 #pragma mark --- 終了処理 ---
@@ -78,7 +82,6 @@ void TitleScene::onExit() {
 
 #pragma mark --- 更新処理 ---
 void TitleScene::update(float deltaTime) {
-    
     
 }
 
